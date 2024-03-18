@@ -21,7 +21,7 @@ public class App {
       //Math.pow(valo a : 10 valor b : 2) ele faz a 10 elevado a 2 
       int res = (int) Math.pow(10,2); //por padrao o Pow e double entao devemos converter para int
        //faz a raiz quadrada do numero passado como parametro
-       int res3 = (int) Math.sqrt(4); //por padrao o Pow e double entao devemos converter para int
+       int res3 = (int) Math.sqrt(4); //por padrao o sqrt e double entao devemos converter para int
        //serve para arredondar um numero sendo ele por padrao double
        double res4 =Math.ceil(10.54);
        //arrendondar para baixo
@@ -30,7 +30,8 @@ public class App {
        double res6 = Math.min(numeroA, numeroB);
        //para pegar o valor maior entre dois numeros
        double res7 = (int) Math.max(numeroA, numeroB);
-
+     //Para gerar um numero aleatorio
+     double gerado = 1 + Math.random() * 7; //por padrao o Random e double entao devemos converter para int
      int resultado = NumOne - NumTwo;
      int resultado2 = NumOne + NumTwo;
      int resultado3 = NumOne * NumTwo;
@@ -50,7 +51,7 @@ public class App {
     contador++;
     JOptionPane.showMessageDialog(null, "Resultado: "+contador, "Contador" , JOptionPane.INFORMATION_MESSAGE);
     
-    JOptionPane.showMessageDialog(null, "Resultado: "+res7, "teste Math.obs" , JOptionPane.INFORMATION_MESSAGE);
+    JOptionPane.showMessageDialog(null, "Resultado: "+gerado, "teste Math.obs" , JOptionPane.INFORMATION_MESSAGE);
 
 
     }
