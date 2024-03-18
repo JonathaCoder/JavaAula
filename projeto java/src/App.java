@@ -51,5 +51,13 @@ public class App {
     JOptionPane.showMessageDialog(null, "Resultado: "+NumeroGerado, "gerador" , JOptionPane.INFORMATION_MESSAGE);
 
 
+   String facesString = JOptionPane.showInputDialog(null,"coloque o numero maximo de faces do dado");
+    int facesDado = Integer.parseInt(facesString);
+
+    int Result = 1 + gerador.nextInt(facesDado);
+
+     
+   JOptionPane.showMessageDialog(null, "voce tirou o dado" +Result);
+
     }
 }
