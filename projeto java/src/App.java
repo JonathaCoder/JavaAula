@@ -1,33 +1,26 @@
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) throws Exception {
-    String nome; // %s
-    float peso; // %f
-    char letra; //c
-    String filme; 
-    int idade; // %d
+    Scanner ler = new Scanner(System.in);
+     int numero;
+     float numeroTwo;
+     String jogo;
 
+     //Configurando (define que os separadores é \r ou \n)
+     ler.useDelimiter("[\r\n]+");
 
-   nome = "jonatha";
-   peso = 20.2f;
-   filme = "velozes e furiosos";
-   idade = 21;
-   letra = 'J';
+     System.out.println("digite um numero: ");
+     numero = ler.nextInt();
+     System.out.println("digite um numero em float: ");
+     numeroTwo = ler.nextFloat();
 
-//concatenaçoes
+     System.out.println("qual seu jogo favorito: ");
+     jogo = ler.next();
+     
 
-   System.out.println("ola seja bem vindo "+ nome);
-   System.out.println("seu peso atual e : "+ peso);
-   System.out.println("seu filme favorito e : "+ filme);
-
- //O filme tem <Variavel> utilizando format
-
- System.out.format("Ola %s seja bem vindo, vimos que hoje seu peso e : %f e tambem vimos que seu filme favorito e %s , sua idade e de : %d e a primeira letra do seu nome e : %c ",nome,peso,filme,idade,letra);
-
- //formatar para String :String.formar(dado)
-
- String texto = String.format("Ola %s seja bem vindo, vimos que hoje seu peso e : %f e tambem vimos que seu filme favorito e %s , sua idade e de : %d e a primeira letra do seu nome e : %c ",nome,peso,filme,idade,letra);
-
-
- System.out.println(texto);
+     System.out.println("seu numero é : " + numero);
+     System.out.println("seu numero em float e : " + numeroTwo);
+     System.out.println("o seu jogo e: " + jogo);
     }
 }
