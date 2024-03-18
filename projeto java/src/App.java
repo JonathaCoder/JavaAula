@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
@@ -32,26 +33,22 @@ public class App {
        double res7 = (int) Math.max(numeroA, numeroB);
      //Para gerar um numero aleatorio
      double gerado = 1 + Math.random() * 7; //por padrao o Random e double entao devemos converter para int
+
+
+
+
+
      int resultado = NumOne - NumTwo;
      int resultado2 = NumOne + NumTwo;
      int resultado3 = NumOne * NumTwo;
      double resultado4 = (double) NumOne / NumTwo; // cast (tipo de dado)
      int resto = NumOne % NumTwo;
      
+     //recomendado
+      Random gerador = new Random();
+      int NumeroGerado = gerador.nextInt(6)+ 1; // 6 é o maior numero, e 1 e o valor minimo
    
-    JOptionPane.showMessageDialog(null, "Resultado do subtracao: "+resultado, "Matematica" , JOptionPane.INFORMATION_MESSAGE);
-    JOptionPane.showMessageDialog(null,  "Resultado do soma: "+resultado2, "Matematica" , JOptionPane.INFORMATION_MESSAGE);
-    JOptionPane.showMessageDialog(null, "Resultado do Multiplicacao: "+resultado3, "Matematica" , JOptionPane.INFORMATION_MESSAGE);
-    JOptionPane.showMessageDialog(null, "Resultado do divisao: "+resultado4, "Matematica" , JOptionPane.INFORMATION_MESSAGE);
-    JOptionPane.showMessageDialog(null, "Resultado: "+resto, "Matematica" , JOptionPane.INFORMATION_MESSAGE);
-    contador += 10;
-    JOptionPane.showMessageDialog(null, "Resultado: "+contador, "Contador" , JOptionPane.INFORMATION_MESSAGE);
-    contador += 10;
-    JOptionPane.showMessageDialog(null, "Resultado: "+contador, "Contador" , JOptionPane.INFORMATION_MESSAGE);
-    contador++;
-    JOptionPane.showMessageDialog(null, "Resultado: "+contador, "Contador" , JOptionPane.INFORMATION_MESSAGE);
-    
-    JOptionPane.showMessageDialog(null, "Resultado: "+gerado, "teste Math.obs" , JOptionPane.INFORMATION_MESSAGE);
+    JOptionPane.showMessageDialog(null, "Resultado: "+NumeroGerado, "gerador" , JOptionPane.INFORMATION_MESSAGE);
 
 
     }
