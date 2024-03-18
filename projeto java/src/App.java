@@ -1,31 +1,13 @@
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class App {
     public static void main(String[] args) throws Exception {
-    Scanner ler = new Scanner(System.in);
-     int numero;
-     float numeroTwo;
-     String jogo;
-
-     //Configurando (define que os separadores é \r ou \n)
-     ler.useDelimiter("[\r\n]+");
-
-     System.out.println("digite um numero: ");
-     numero = ler.nextInt();
-     System.out.println("digite um numero em float: ");
-     numeroTwo = ler.nextFloat();
-
-     System.out.println("qual seu jogo favorito: ");
-     jogo = ler.next();
-     
-
-     System.out.println("seu numero é : " + numero);
-     System.out.println("seu numero em float e : " + numeroTwo);
-     System.out.println("o seu jogo e: " + jogo);
-
-
-     //converçoes
-   //Intenger.parseInt(var) , Float.parseFloat(vat) , parseDouble(var)
-
+      //mostra uma caixa de entrada
+      String texto = JOptionPane.showInputDialog(null, "digite seu numero");
+      int numero = Integer.parseInt(texto);
+      String filme = JOptionPane.showInputDialog(null, "qual seu fime preferido de 2021", "Filme favorito", JOptionPane.QUESTION_MESSAGE);
+      System.out.println(filme);
+      System.out.println(numero);
     }
 }
