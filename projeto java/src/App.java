@@ -10,7 +10,7 @@ public class App {
       String filme = JOptionPane.showInputDialog(null, "qual seu fime preferido de 2021", "Filme favorito", JOptionPane.QUESTION_MESSAGE);
 
        //mostra uma interface grafica com a mensagem ao qual colocamos no imput
-      JOptionPane.showMessageDialog(null, "seu filme favorito: "+filme);
+      JOptionPane.showMessageDialog(null, "seu filme favorito: ", "title",JOptionPane.INFORMATION_MESSAGE);
 
       //imprimi no console
       System.out.println(filme);
