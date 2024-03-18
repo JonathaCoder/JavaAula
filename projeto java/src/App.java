@@ -22,5 +22,10 @@ public class App {
      System.out.println("seu numero é : " + numero);
      System.out.println("seu numero em float e : " + numeroTwo);
      System.out.println("o seu jogo e: " + jogo);
+
+
+     //converçoes
+   //Intenger.parseInt(var) , Float.parseFloat(vat) , parseDouble(var)
+
     }
 }
