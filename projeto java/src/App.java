@@ -3,17 +3,21 @@ import javax.swing.JOptionPane;
 
 public class App {
     public static void main(String[] args) throws Exception {
-      //mostra uma caixa de entrada interface grafica com input 
-      String texto = JOptionPane.showInputDialog(null, "digite seu numero");
-      int numero = Integer.parseInt(texto);
-       //mostra uma caixa de entrada interface grafica com input
-      String filme = JOptionPane.showInputDialog(null, "qual seu fime preferido de 2021", "Filme favorito", JOptionPane.QUESTION_MESSAGE);
+     int NumOne;
+     int NumTwo;
 
-       //mostra uma interface grafica com a mensagem ao qual colocamos no imput
-      JOptionPane.showMessageDialog(null, "seu filme favorito: ", "title",JOptionPane.INFORMATION_MESSAGE);
+    NumOne = 10;
+    NumTwo = 5;
 
-      //imprimi no console
-      System.out.println(filme);
-      System.out.println(numero);
+     int resultado = NumOne - NumTwo;
+     int resultado2 = NumOne + NumTwo;
+     int resultado3 = NumOne * NumTwo;
+     float resultado4 = NumOne / NumTwo;
+     
+   
+    JOptionPane.showMessageDialog(null, "Resultado do subtracao: "+resultado, "Matematica" , JOptionPane.INFORMATION_MESSAGE);
+    JOptionPane.showMessageDialog(null,  "Resultado do soma: "+resultado2, "Matematica" , JOptionPane.INFORMATION_MESSAGE);
+    JOptionPane.showMessageDialog(null, "Resultado do Multiplicacao: "+resultado3, "Matematica" , JOptionPane.INFORMATION_MESSAGE);
+    JOptionPane.showMessageDialog(null, "Resultado do divisao: "+resultado4, "Matematica" , JOptionPane.INFORMATION_MESSAGE);
     }
 }
