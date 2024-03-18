@@ -1,48 +1,26 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        //variaveis do Tipo inteiro
-       byte numeroPequeno;
-       short numeroShort;
-       int numeroMaior;
-       long numeroBig;
- 
-
-       //variaveis do tipo Ponto flutuante
-    float peso;
-    double pi;
-    char letra;
-    boolean fome;
+    String nome; // %s
+    float peso; // %f
+    char letra; //c
+    String filme; 
+    int idade; // %d
 
 
-       letra = 'C';
-       pi = 20.3232332323;
-       peso = 30.6f;
-       fome = true;
+   nome = "jonatha";
+   peso = 20.2f;
+   filme = "velozes e furiosos";
+   idade = 21;
+   letra = 'J';
 
+//concatenaçoes
 
+   System.out.println("ola seja bem vindo "+ nome);
+   System.out.println("seu peso atual e : "+ peso);
+   System.out.println("seu filme favorito e : "+ filme);
 
+ //O filme tem <Variavel> utilizando format
 
-
-  // Inteiros
-       numeroShort = 32766;
-       numeroPequeno = 20;
-       numeroMaior = 214748680;
-       numeroBig = 922337203685477000l;
-       
- //String 
- String nome = "jonatha";
-
-    System.out.println(numeroPequeno);
-    System.out.println(numeroShort);
-    System.out.println(numeroMaior);
-    System.out.println(numeroBig);
-
-
-
-    System.out.println(peso);
-    System.out.println(pi);
-    System.out.println(fome);
-    System.out.println(nome);
- 
+ System.out.format("Ola %s seja bem vindo, vimos que hoje seu peso e : %f e tambem vimos que seu filme favorito e %s , sua idade e de : %d e a primeira letra do seu nome e : %c ",nome,peso,filme,idade,letra);
     }
 }
